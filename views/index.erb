@@ -1,7 +1,11 @@
-
-<h1>Anagram it</h1>
-<form action="/results">
-  <input type="text" name="word">
-  <input type="text" name="comparator">
-  <button type="submit" name="button">Submit</button>
-</form>
+<%= erb :_header %>
+<div class="container-fluid">
+  <h1 class="jumbotron">Anagram it</h1>
+  <div class="row">
+    <form class="col-xs-8 col-center" action="/results">
+      <input class="form-control" type="text" name="word">
+      <input class="form-control" type="text" name="comparator">
+      <button class="btn btn-block btn-danger" type="submit" name="button">Submit</button>
+    </form>
+  </div>
+</div>

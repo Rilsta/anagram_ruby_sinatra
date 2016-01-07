@@ -12,7 +12,7 @@ get('/results') do
   @results = ""
   @comparator.each do |comp|
     if @word.anagram(comp)
-      @results += comp + " "
+      @results += comp.gsub(/\W/,'') + " "
     end
   end
   erb(:results)

@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+}
+
+.col-center {
+  float: none;
+  margin: 0 auto;
+}
+
+input {
+  text-align: center;
+}

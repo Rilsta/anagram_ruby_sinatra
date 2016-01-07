@@ -1,6 +1,6 @@
 class String
   define_method(:anagram) do |comparator|
-    split_word = self.split('')
+    split_word = self.gsub(/\W/, '').split('')
     split_word.each do |letter|
       self_count = self.gsub(/[^#{letter}]/, '').length
       comparator_count = comparator.gsub(/[^#{letter}]/, '').length
