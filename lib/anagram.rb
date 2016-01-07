@@ -10,4 +10,7 @@ class String
     end
     return true
   end
+  # output = true
+  # self.split('').each { |l| self.gsub(/[^#{l}]/, '').length != c.gsub(/[^#{l}]/, '').length ? output = false : next }
+  # return output
 end
